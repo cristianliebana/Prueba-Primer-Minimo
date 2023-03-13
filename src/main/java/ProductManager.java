@@ -1,5 +1,7 @@
 import java.util.List;
 
+
+//Prueba
 public interface ProductManager {
     void addProduct(String nombre,double precio);
     void addUser(String id, String nombre, String apellido);
