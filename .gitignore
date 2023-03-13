@@ -71,6 +71,7 @@ crashlytics-build.properties
 fabric.properties
 .idea/
 *.iml
+/target
 
 # Editor-based Rest Client
 .idea/httpRequests
