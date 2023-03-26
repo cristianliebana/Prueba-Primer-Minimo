@@ -12,6 +12,7 @@ public class ProductManagerImpl implements ProductManager {
     }
     @Override
     public void addProduct(String nombre,double precio){
+
         this.products.add(new Producto(nombre,precio));
     }
     @Override
@@ -48,5 +49,18 @@ public class ProductManagerImpl implements ProductManager {
     @Override
     public List<Producto> getProductosporVentas() {
         return null;
+    }
+
+   @Override
+    public void add(int cantidad, String nombre){
+        this.products.add(cantidad, nombre);
+    }
+
+    public int numUsuarios(){
+        return usuarios.size();
+    }
+
+    public int numPedidos(){
+        return this.pedidos.size();
     }
 }

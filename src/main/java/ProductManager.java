@@ -21,5 +21,7 @@ public interface ProductManager {
     List<Producto> getProductosporVentas();
 
     int numPedidos();
+
+    void add(int cantidad, String nombre);
 }
 

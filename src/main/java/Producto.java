@@ -1,12 +1,13 @@
 public class Producto {
 
-    String nombre;
+    private String nombre;
 
-    double precio;
+    private double precio;
 
-    int cantidad;
+    private int cantidad;
 
     public Producto(String nombre,double precio){
+        setCantidad(cantidad);
         setNombre(nombre);
         setPrecio(precio);
     }

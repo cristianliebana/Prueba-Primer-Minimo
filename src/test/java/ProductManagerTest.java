@@ -42,7 +42,6 @@ public class ProductManagerTest {
         pedido2.add(3,"DONUT");
         pedido2.add(1,"COCA-COLA");
         pm.realizarPedido("41667843A",pedido2);
-
         Assert.assertEquals(2, pm.numPedidos());
     }
 
@@ -53,6 +52,28 @@ public class ProductManagerTest {
         //Assert.assertEquals();
 
         Pedido pedido2 = pm.servirPedido();
-        //Assert.
+        //Assert.assertEquals();
+    }
+
+    @Test
+    public void procesarPedidoTest(){
+        Assert.assertEquals(3, this.pm.numUsuarios());
+        Assert.assertEquals(4, this.pm.numProductos());
+        Assert.assertEquals(3, this.pm.numPedidos());
+
+        Pedido pedido1 = this.pm.servirPedido();
+        Assert.assertEquals(1, this.pm.numPedidos());
+        Assert.assertEquals(2, this.pm.numPedidos());
+    }
+
+    @Test
+    public void getPedidosporUsuario(){
+        procesarPedidoTest();
+        List<Pedido> pedido1 = this.pm.getPedidosporUsuario("1111");
+        Assert.assertEquals(1, pedido1.size());
+
+        List<Pedido> pedido2 = this.pm.getPedidosporUsuario("112");
+        Assert.assertEquals(2, pedido2.size());
+
     }
 }
