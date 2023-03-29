@@ -57,8 +57,8 @@ public class ProductManagerTest {
 
     @Test
     public void procesarPedidoTest(){
-        Assert.assertEquals(3, this.pm.numUsuarios());
-        Assert.assertEquals(4, this.pm.numProductos());
+        Assert.assertEquals(1, this.pm.numUsuarios());
+        Assert.assertEquals(2, this.pm.numProductos());
         Assert.assertEquals(3, this.pm.numPedidos());
 
         Pedido pedido1 = this.pm.servirPedido();

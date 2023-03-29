@@ -23,5 +23,9 @@ public interface ProductManager {
     int numPedidos();
 
     void add(int cantidad, String nombre);
+
+    int numProductos();
+
+    int numUsuarios();
 }
 

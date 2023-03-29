@@ -5,13 +5,6 @@ public class Pedido {
     String Usuario;
     String producto;
 
-    List<ListaProducto> elementos;
-
-    public Pedido(String Usuario){
-        this.Usuario = Usuario;
-        this.elementos = new List<ListaProducto>();
-    }
-
     public String getUsuario() {
         return Usuario;
     }
